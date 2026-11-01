@@ -1,0 +1,13 @@
+import Header from './components/Header';
+import ProductList from './components/ProductList';
+import { initialProducts } from './components/data/products';
+import './App.css';
+
+export default function App() {
+  return (
+    <main className="container">
+      <Header />
+      <ProductList products={initialProducts} />
+    </main>
+  );
+}
